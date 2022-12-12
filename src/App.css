@@ -4,28 +4,21 @@
   justify-content: center;
   align-items: center;
   background-color: #282c34;
-  
-  
 }
 .container{
   display: flex;
-  height: 80vh;
+  height: 75vh;
   padding:20px;
   flex-direction: column;
   align-items: center;
   color:rgb(24, 22, 22);
   font-weight: bold;
-  /* overflow:auto; */
   overflow-x: hidden;
-  border: 2px solid gray;
-  
-  
 }
 .todoform{
   display:flex;
   justify-content: space-around;
   width:450px;
-  position: sticky;
 }
 input{
   width: 80%;
@@ -71,7 +64,7 @@ button{
 }
 h2{
   color:aqua;
-  position: sticky;
+  
 }
 h2>i{
   color:white;
@@ -82,13 +75,16 @@ input+button{
   background-color: #00D8ff;
   color:#1d1515;
 }
-@media (max-width:480px) {
-  .container,.singletodo,.todoform{
-    font-size: 18px;
-    width:350px;
+@media (max-width:768px){
+  .container{
+    width:fit-content;
+    height:80vh;
+    overflow: auto;
   }
-  button{
-    margin-left: 15px;
+  .todoform{
+    width:60vw;
   }
-  
+  .singletodo{
+    width:60vw;
+  }
 }
